@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Check-out | Toryabah Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html"><img src="" alt="Logo Avalaiable"></a>
+        </div>
+
+        <!-- Search-box for New Letter-->
+
+        <div class="search-box">
+            <input type="text" placeholder="Search Products...">
+
+        <button>
+            <i class="fas fa-search"></i>
+        </button>
+        </div>
+
+        <!---  Navigation Bar  -->
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="contact.html" class="active">Contact</a>
+
+        </nav>
+
+        <!---  Icons -->
+
+        <div class="nav-icons" class="header-icons">
+
+            <a href="#">
+                <i class="fas fa-heart"></i>
+            </a>
+
+             <a href="#" class="cart-icon">
+
+        <i class="fas fa-shopping-cart"></i>
+
+        <span class="cart-count">0</span>
+
+    </a>
+
+            <a href="#">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+        <div class="header-icons">
+
+   
+
+</div>
+
+        <!---  Mobile Menu  -->
+
+        <div class="menu-toggle">
+            
+            <i class="fas fa-bars"></i>
+
+        </div>
+    </header>
+
+ <section class="checkout">
+
+<h1>Checkout</h1>
+
+<div class="checkout-container">
+
+    <div class="billing">
+
+        <h2>Billing Details</h2>
+
+        <form id="checkoutForm" action="https://formsubmit.co/sulaimontoheeb5@gmail.com" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thankyou.html">
+             <input type="hidden" name="Order Summary" id="orderSummary">
+
+
+        <input
+        type="hidden"  name="Customer Name" id="customerName"
+        placeholder="Full Name"
+        required>
+
+        <input
+        type="hidden" name="Customer Email" id="customerEmail"
+        placeholder="Email Address"
+        required>
+
+        <input
+        type="phone" name="Customer Phone" id="customerPhone"
+        placeholder="Phone Number"
+        required>
+
+        <input
+        type="hidden" name="Delivery Address" id="customerAddress"
+        placeholder="Delivery Address"
+        required>
+
+        <textarea
+        type="hidden"
+        placeholder="Additional Note"
+        rows="5"></textarea>
+
+        <button type="submit">
+
+        Place Order
+
+        </button>
+
+        </form>
+
+        </div>
+
+        <div class="summary">
+
+        <h2>Order Summary</h2>
+
+        <div class="container">
+
+            <div class="summary-items">
+
+        </div>
+
+        <div class="summary-total">
+
+        <p>
+
+        Subtotal
+
+        <span id="subtotal">
+
+        $0
+
+        </span>
+
+        </p>
+
+        <p>
+
+        Shipping
+
+        <span>
+
+        $10
+
+        </span>
+
+        </p>
+
+        <hr>
+
+        <h3>
+
+        Total
+
+        <span id="grandTotal">
+
+        $10
+
+        </span>
+
+        </h3>
+
+        </div>
+        </div>
+        
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!--=================================
+FOOTER
+==================================-->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Company -->
+
+        <div class="footer-box">
+
+            <h2 class="footer-logo">
+                Toryabah <span>Store</span>
+            </h2>
+
+            <p>
+                Your trusted online shopping destination for premium fashion,
+                electronics, accessories and everyday essentials at affordable
+                prices.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="#">Home</a>
+
+            <a href="#">Shop</a>
+
+            <a href="#">Categories</a>
+
+            <a href="#">About Us</a>
+
+            <a href="#">Contact</a>
+
+        </div>
+
+        <!-- Customer Support -->
+
+        <div class="footer-box">
+
+            <h3>Customer Support</h3>
+
+            <a href="#">FAQs</a>
+
+            <a href="#">Shipping Policy</a>
+
+            <a href="#">Returns</a>
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Terms & Conditions</a>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-box">
+
+            <h3>Contact Us</h3>
+
+            <p><i class="fas fa-location-dot"></i> Lagos, Nigeria</p>
+
+            <p><i class="fas fa-phone"></i> +234 800 000 0000</p>
+
+            <p><i class="fas fa-envelope"></i> info@twdstore.com</p>
+
+            <div class="payment-icons">
+
+                <i class="fab fa-cc-visa"></i>
+
+                <i class="fab fa-cc-mastercard"></i>
+
+                <i class="fab fa-cc-paypal"></i>
+
+                <i class="fab fa-cc-stripe"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 Toryabah Store. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+   
+<script src="checkout.js"></script>
+
+    Order Number : ${orderNumber}
+
+
+    <!-- invoice pdf download-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="checkout.js"></script>
+</body>
+</html>
