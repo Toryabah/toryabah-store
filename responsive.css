@@ -50,50 +50,86 @@
 
 
 
-
 @media (max-width:768px){
 
+.header{
+
+    flex-wrap:wrap;
+
+    padding:15px 5%;
+
+}
+
+.logo{
+
+    flex:1;
+
+}
+
 .menu-toggle{
+
     display:block;
+
+    font-size:30px;
+
+}
+
+.nav-icons{
+
+    margin-right:20px;
+
+}
+
+.search-box{
+
+    order:3;
+
+    width:100%;
+
+    margin-top:15px;
+
 }
 
 .navbar{
 
     position:absolute;
+
     top:100%;
+
     left:0;
+
     width:100%;
 
     background:#fff;
 
     display:flex;
+
     flex-direction:column;
 
     align-items:center;
 
     gap:25px;
 
-    padding:25px 0;
+    padding:30px 0;
 
     transform:translateY(-150%);
+
     transition:.4s;
+
+    box-shadow:0 15px 25px rgba(0,0,0,.1);
+
 }
 
 .navbar.active{
-    transform:translateY(0);
-}
 
-.search-box{
-    display:none;
+    transform:translateY(0);
+
 }
 
 .hero-container{
     grid-template-columns:1fr;
 }
 
-/* .hero-image{
-    order:-1;
-}   Tis is bring Image Above Text*/
 
 .hero-image img{
     max-width:300px;
@@ -124,7 +160,29 @@ text-align:center;
 justify-content:center;
 
 }
+
 }
+
+
+
+
+
+
+/* .search-box{
+    display:none;
+}  */
+
+
+
+
+
+
+
+
+/* .hero-image{
+    order:-1;
+}   This is bring Image Above Text*/
+
 
 
 

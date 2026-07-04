@@ -22,13 +22,15 @@
       <div class="spinner"></div>
     </div>
 
-    <header class="header">
+  <!--  <header class="header">
 
-        <div class="logo">
+      
+        
+      <div class="logo">
             <h1><a href="index.html">Toryabah <span>Store</span></a></h1>
         </div>
 
-        <!-- Search-box for New Letter-->
+        <!-- Search-box for New Letter
 
         <div class="search-box">
             <input type="text" placeholder="Search Products...">
@@ -38,9 +40,9 @@
         </button>
         </div>
 
-        <!---  Navigation Bar  -->
+        <!--  Navigation Bar  
 
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="index.html" class="active">Home</a>
             <a href="#">Shop</a>
             <a href="#">About</a>
@@ -48,19 +50,14 @@
 
         </nav>
 
-        <!---  Icons -->
+        <!---  Icons
 
-        <div class="nav-icons" class="header-icons">
+        <div class="nav-icons header-icons">
 
             <a href="#">
                 <i class="fas fa-heart"></i>
             </a>
 
-          <!--  <a href="#">
-                <i class="fas shopping-cart"></i>
-
-                <span class="cart-count">0</span>
-            </a>  -->
 
              <a href="#" class="cart-icon">
 
@@ -81,14 +78,76 @@
 
 </div>
 
-        <!---  Mobile Menu  -->
+        <!---  Mobile Menu  
 
-        <div class="menu-toggle">
+        <div class="menu-toggle"  id="menu-toggle">
             
             <i class="fas fa-bars"></i>
 
-        </div>
-    </header>
+        </div>    
+    </header>    -->
+
+
+
+    <header class="header">
+
+    <!-- Logo -->
+    <div class="logo">
+        <a href="index.html">
+            Toryabah <span>Store</span>
+        </a>
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+
+        <input type="text" placeholder="Search products...">
+
+        <button>
+            <i class="fas fa-search"></i>
+        </button>
+
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="navbar" id="navbar">
+
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+    <!-- Icons -->
+    <div class="nav-icons">
+
+        <a href="#">
+            <i class="fas fa-heart"></i>
+        </a>
+
+        <a href="#" class="cart-icon">
+
+            <i class="fas fa-shopping-cart"></i>
+
+            <span class="cart-count">0</span>
+
+        </a>
+
+        <a href="#">
+            <i class="fas fa-user"></i>
+        </a>
+
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+
+        <i class="fas fa-bars"></i>
+
+    </div>
+
+</header>
 
     <section class="hero">
         <div class="hero-container">
@@ -1103,6 +1162,8 @@ QUICK VIEW MODAL
 <div id="toast" class="toast">
     Product added to cart!
 </div>
+
+<script src="menu.js"></script>
 
    <script src="cart.js"></script>
 
