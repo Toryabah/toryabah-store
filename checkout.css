@@ -261,3 +261,55 @@ font-size:36px;
 }
 
 
+/*=============================
+CONTACT PAGE
+==============================*/
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+contact-card,
+.contact-form {
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  padding: 0.95rem 1rem;
+}
+
+.contact-form button{
+    width: 100%;
+    margin-top: 25px;
+    padding: 16px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    transition: .3s;
+
+}
+
+.order-form button:hover{
+    background: #c91d2d;
+    transform: translateY(-3px);
+
+}
